@@ -5,6 +5,9 @@ zoxide init fish | source
 zoxide init fish --cmd cd | source
 alias z="zi"
 
+abbr -a ga "git add ."
+abbr -a gcm "git commit -m "
+
 # ==========================================
 # 🚀 Zoxide + FZF 终极目录瞬移魔法
 # ==========================================
