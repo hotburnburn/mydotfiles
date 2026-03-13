@@ -3,3 +3,28 @@
 [user]
 	email = 13287686871@163.com
 	name = hotburnburn
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    # 开启并排显示模式 (强烈推荐)
+    side-by-side = true
+    
+    # 显示行号
+    line-numbers = true
+    
+    # 开启文件级别的导航修饰 (让文件之间的分割线更明显)
+    navigate = true    
+    
+    # 自动根据终端的背景色(深色/浅色)调整高亮对比度
+    light = false
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default

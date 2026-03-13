@@ -41,6 +41,7 @@ command = "uv python find --show-version"
 format = "via [$symbol$output]($style) "
 symbol = "🐍 "
 style = "bold yellow"
+ignore_timeout = true
 
 [package]
 format = "[$symbol$version]($style) "
