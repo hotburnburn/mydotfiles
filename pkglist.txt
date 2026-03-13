@@ -13,7 +13,9 @@ fortune-mod
 fzf
 git
 jq
+less
 lolcat
+nano
 neovim
 openssh
 procs
@@ -26,3 +28,6 @@ unzip
 uv
 wget
 zoxide
+
+# Generated: 2026-03-14 03:17:11 | Host: hot2burn | User: hbb
+
