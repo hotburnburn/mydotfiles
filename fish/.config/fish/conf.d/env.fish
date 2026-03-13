@@ -1,3 +1,7 @@
+# 过滤掉 WSL 默认注入的无效 games 路径
+set PATH (string match -v '/usr/games' $PATH)
+set PATH (string match -v '/usr/local/games' $PATH)
+
 set -x PATH ~/.local/bin/ $PATH
 
 # 如果 fnm 命令存在，则初始化
