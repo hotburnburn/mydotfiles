@@ -23,7 +23,7 @@ function _update_weather_cache
         case 0
             # 判断是白天还是夜晚（这里假设 6:00 到 17:59 为白天）
             if test $current_hour -ge 6 -a $current_hour -lt 18
-                set icon "☀️"
+                set icon "🌞"
             else
                 set icon "🌙"
             end
@@ -34,15 +34,15 @@ function _update_weather_cache
         case 45 48
             set icon "🌫️"
         case 51 53 55 56 57 61 63 65 66 67 80 81 82
-            set icon "🌧️"
+            set icon "☔"
         case 71 73 75 77 85 86
-            set icon "❄️"
+            set icon "⛄"
         case 95 96 99
-            set icon "⛈️"
+            set icon "⚡"
     end
 
     # 4. 组装并写入你的临时文件
-    echo "$icon +$temp°C" >/tmp/weather_cache.txt
+    echo "$icon $temp°C" >/tmp/weather_cache.txt
 end
 
 # 触发条件不变：文件不存在，或超过 30 分钟没更新

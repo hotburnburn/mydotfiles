@@ -1,44 +1,71 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-add_newline = false
 
-# 使用 $all 兜底左侧的所有模块
+add_newline = false
 format = """
+$jobs\
 $directory\
+$git_branch\
+$git_status\
+${custom.proxy}\
+$lua\
+$nodejs\
+${custom.uv_python}\
+$package\
+$cmd_duration\
 $fill\
-${custom.weather}$time\
+${custom.weather}\
+$time\
 $line_break\
+$status\
 $character\
 """
 
+# 候选： Bun C/Cpp Deno direnv docker env_var haskell hostname java k8s local_ip memusage mise mojo ocaml pixi purescript quarto ruby shlvl vcsh typst
+
 [directory]
-truncation_length = 3
+truncation_length = 0
 
-# 别忘了配置填充字符（使用空格）
-[fill]
-symbol = " "
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
 
-# 启用 time 模块并进行基本设置
-[time]
-disabled = false
-# format 决定了时间的显示样式，默认带有 🕘 图标
-format = '[$time]($style)'
-# time_format 决定了时间的具体格式，%R 是 24 小时制 (HH:MM)
-time_format = '%R'
-style = '#ADFF2F'
-
-# 自定义代理显示模块
 [custom.proxy]
-# 只有当这些环境变量存在时才显示
 when = "test -n \"$http_proxy\""
-ignore_timeout = true
-# 显示的图标和样式（你可以换成喜欢的图标，如 🚀, 🌐, 🛡️）
 format = "[🌐 ](bold)"
+ignore_timeout = true
+
+[custom.uv_python]
+detect_files = [".python_version", "uv.lock", "pyproject.toml"]
+detect_folders = [".venv"]
+detect_extensions = [".py", ".ipynb"]
+command = "uv python find --show-version"
+format = "via [$symbol$output]($style) "
+symbol = "🐍 "
+style = "bold yellow"
+
+[package]
+format = "[$symbol$version]($style) "
+
+[cmd_duration]
+format = "[$duration ](dimmed white)"
+
+
+[fill]
+symbol = "-"
+style = "#333333"
 
 [custom.weather]
 command = "cat /tmp/weather_cache.txt"
-ignore_timeout = true
-# 只有当缓存文件存在且不为空时才显示
 when = "test -s /tmp/weather_cache.txt"
 style = "bold yellow"
 format = " [$output]($style) "
+ignore_timeout = true
 
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = '%R'         # %R 是 24 小时制 (HH:MM)
+style = '#ADFF2F'
+
+[status]
+disabled = false
+format = '[\[$status\]]($style)'
