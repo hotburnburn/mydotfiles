@@ -8,6 +8,7 @@ alias z="zi"
 abbr -a ga "git add ."
 abbr -a gcm "git commit -m "
 abbr -a gst "git status"
+abbr -a gd "git diff"
 abbr -a glog "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 abbr -a glg 'git log --stat'
 
