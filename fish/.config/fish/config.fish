@@ -2,4 +2,4 @@
 #     set -g fish_greeting ""
 # end
 
-abbr -a pm "sudo pacman -S"
+abbr -a ins "sudo paru -S"

@@ -5,6 +5,8 @@ zoxide init fish | source
 zoxide init fish --cmd cd | source
 alias z="zi"
 
+abbr -a v nvim
+
 abbr -a ga "git add ."
 abbr -a gcm "git commit -m "
 abbr -a gst "git status"
