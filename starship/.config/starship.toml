@@ -1,0 +1,44 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+# 使用 $all 兜底左侧的所有模块
+format = """
+$directory\
+$fill\
+${custom.weather}$time\
+$line_break\
+$character\
+"""
+
+[directory]
+truncation_length = 3
+
+# 别忘了配置填充字符（使用空格）
+[fill]
+symbol = " "
+
+# 启用 time 模块并进行基本设置
+[time]
+disabled = false
+# format 决定了时间的显示样式，默认带有 🕘 图标
+format = '[$time]($style)'
+# time_format 决定了时间的具体格式，%R 是 24 小时制 (HH:MM)
+time_format = '%R'
+style = '#ADFF2F'
+
+# 自定义代理显示模块
+[custom.proxy]
+# 只有当这些环境变量存在时才显示
+when = "test -n \"$http_proxy\""
+ignore_timeout = true
+# 显示的图标和样式（你可以换成喜欢的图标，如 🚀, 🌐, 🛡️）
+format = "[🌐 ](bold)"
+
+[custom.weather]
+command = "cat /tmp/weather_cache.txt"
+ignore_timeout = true
+# 只有当缓存文件存在且不为空时才显示
+when = "test -s /tmp/weather_cache.txt"
+style = "bold yellow"
+format = " [$output]($style) "
+
