@@ -1,7 +1,7 @@
 function pushpm --description "📦 Export Arch packages to dotfiles"
     set -l dest_dir (test -n "$argv[1]"; and echo "$argv[1]"; or echo "$HOME/dotfiles")
     set -l official_file "$dest_dir/pkglist.txt"
-    set -l aur_file "$dest_dir/aur_pkglist.txt"
+    set -l aur_file "$dest_dir/pkglist_aur.txt"
 
     # 确保目录存在
     if not test -d "$dest_dir"
