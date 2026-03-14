@@ -30,6 +30,7 @@ alias ls="eza --icons"
 alias ll="eza -l -g --icons --git" # 长格式，带 Git 状态
 alias la="eza -la -g --icons --git" # 显示隐藏文件
 alias tree="eza --tree --icons" # 代替传统的 tree 命令
+abbr -a ta "tree -a"
 
 # 让 cat 变成带高亮的 bat
 alias cat="bat"
