@@ -2,3 +2,5 @@
 require("config.lazy")
 
 vim.lsp.enable("ruff")
+
+vim.opt.clipboard = "unnamedplus"
