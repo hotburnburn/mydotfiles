@@ -1,3 +1,4 @@
+cbonsai
 win32yank-bin
 xdg-ninja
 yay-bin

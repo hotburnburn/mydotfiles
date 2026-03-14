@@ -7,6 +7,7 @@ dust
 eza
 fastfetch
 fd
+figlet
 fish
 fnm
 fortune-mod
