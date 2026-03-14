@@ -13,6 +13,7 @@ fortune-mod
 fzf
 git
 git-delta
+glow
 jq
 less
 lolcat
@@ -29,6 +30,3 @@ unzip
 uv
 wget
 zoxide
-
-# Generated: 2026-03-14 05:26:54 | Host: hot2burn | User: hbb
-

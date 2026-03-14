@@ -42,9 +42,9 @@ function pushpm --description "📦 Export Arch packages to dotfiles"
         echo "   ⚠️  导出失败（可能没有 AUR 包）"
     end
 
-    # 6️⃣ 添加元数据注释（可选，不影响恢复功能）
-    set -l header "# Generated: "(date "+%Y-%m-%d %H:%M:%S")" | Host: "$hostname" | User: "(whoami)
-    echo -e "\n$header\n" >>"$official_file"
+    # # 6️⃣ 添加元数据注释（可选，不影响恢复功能）
+    # set -l header "# Generated: "(date "+%Y-%m-%d %H:%M:%S")" | Host: "$hostname" | User: "(whoami)
+    # echo -e "\n$header\n" >>"$official_file"
 
     echo ""
     echo "🎉 导出完成:"
