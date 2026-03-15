@@ -1,3 +1,4 @@
+# 官方包
 base
 base-devel
 bat
@@ -27,7 +28,22 @@ starship
 stow
 sudo
 tealdeer
+thefuck
 unzip
 uv
 wget
 zoxide
+
+# aur包
+cbonsai
+win32yank-bin
+xdg-ninja
+yay-bin
+yay-bin-debug
+
+# === 元数据与统计信息 ===
+# 更新时间: 2026-03-15 16:27:53
+# 设备名称: hot2burn
+# 官方包数: 34
+# AUR包数 : 5
+# 总包数量: 39

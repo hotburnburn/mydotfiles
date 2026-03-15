@@ -1,9 +1,12 @@
+abbr -a ins "yay -S --needed"
+
 # 初始化 starship zoxide
 starship init fish | source
 
 zoxide init fish | source
 zoxide init fish --cmd cd | source
 alias z="zi"
+abbr -a gb "cd -"
 
 abbr -a v nvim
 
