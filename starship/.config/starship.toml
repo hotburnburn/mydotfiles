@@ -10,7 +10,6 @@ $lua$nodejs${custom.uv_python}$rust\
 $package\
 $cmd_duration\
 ${custom.space}$fill${custom.space}\
-${custom.oldpwd}\
 ${custom.weather}$time\
 $line_break\
 $status$character\
@@ -60,8 +59,8 @@ command = 'if [ "$OLDPWD" = "$HOME" ]; echo "~"; else basename "$OLDPWD"; end'
 when = '[ -n "$OLDPWD" ]'
 # 定义显示的格式，↩ 图标加上目录名
 format = '[↩ $output]($style) '
-# 设置为暗灰色加粗，像幽灵字一样，提供信息但不喧宾夺主
-style = "bold bright-black"
+# 设置为暗灰色，像幽灵字一样，提供信息但不喧宾夺主
+style = "#4F4F4F"
 
 [custom.weather]
 command = "cat /tmp/weather_cache.txt"
