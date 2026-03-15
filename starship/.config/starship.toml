@@ -10,6 +10,7 @@ $lua$nodejs${custom.uv_python}$rust\
 $package\
 $cmd_duration\
 ${custom.space}$fill${custom.space}\
+${custom.oldpwd}\
 ${custom.weather}$time\
 $line_break\
 $status$character\
@@ -51,6 +52,16 @@ format = " "
 [fill]
 symbol = "-"
 style = "#333333"
+
+[custom.oldpwd]
+# 读取并只显示上一级目录的最后一部分名称
+command = 'if [ "$OLDPWD" = "$HOME" ]; echo "~"; else basename "$OLDPWD"; end'
+# 只有当 $OLDPWD 不为空时才触发（避免刚打开终端时报错）
+when = '[ -n "$OLDPWD" ]'
+# 定义显示的格式，↩ 图标加上目录名
+format = '[↩ $output]($style) '
+# 设置为暗灰色加粗，像幽灵字一样，提供信息但不喧宾夺主
+style = "bold bright-black"
 
 [custom.weather]
 command = "cat /tmp/weather_cache.txt"
