@@ -1,3 +1,28 @@
+vim.api.nvim_create_autocmd("User", {
+  pattern = "MiniFilesBufferCreate",
+  callback = function(args)
+    local buf_id = args.data.buf_id
+
+    -- 向上循环 (到顶时跳到底部)
+    vim.keymap.set("n", "k", function()
+      if vim.fn.line(".") == 1 then
+        return "G"
+      else
+        return "k"
+      end
+    end, { buffer = buf_id, expr = true, desc = "循环向上滚动" })
+
+    -- 向下循环 (到底时跳到顶部)
+    vim.keymap.set("n", "j", function()
+      if vim.fn.line(".") == vim.fn.line("$") then
+        return "gg"
+      else
+        return "j"
+      end
+    end, { buffer = buf_id, expr = true, desc = "循环向下滚动" })
+  end,
+})
+
 return {
   -- 1. 禁用 Snacks.explorer 并释放其默认快捷键
   {
