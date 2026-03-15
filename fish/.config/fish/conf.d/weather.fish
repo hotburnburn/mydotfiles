@@ -30,7 +30,7 @@ function _update_weather_cache
         case 1 2
             set icon "⛅"
         case 3
-            set icon "☁️"
+            set icon "☁ "
         case 45 48
             set icon "🌫️"
         case 51 53 55 56 57 61 63 65 66 67 80 81 82
