@@ -25,5 +25,4 @@ set -gx NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME/npm/npmrc"
 
 # other path
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME/nv"
-set -gx DOTNET_CLI_HOME "$XDG_DATA_HOME/dotnet"
 set -gx IPYTHONDIR "$XDG_CONFIG_HOME/ipython"
