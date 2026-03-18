@@ -32,13 +32,13 @@ function _update_weather_cache
         case 3
             set icon "☁ "
         case 45 48
-            set icon "🌫️"
+            set icon "🙈"
         case 51 53 55 56 57 61 63 65 66 67 80 81 82
             set icon "☔"
         case 71 73 75 77 85 86
             set icon "⛄"
         case 95 96 99
-            set icon "⚡"
+            set icon "⛈ "
     end
 
     # 4. 组装并写入你的临时文件
