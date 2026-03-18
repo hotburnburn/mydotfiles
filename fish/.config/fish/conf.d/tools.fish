@@ -1,4 +1,5 @@
 abbr -a ins "yay -S --needed"
+abbr -a pmclean "sudo pacman -Rns \$(pacman -Qtdq)"
 
 # 初始化 starship zoxide
 starship init fish | source

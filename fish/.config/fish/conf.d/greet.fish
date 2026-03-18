@@ -1,4 +1,8 @@
 function fish_greeting
+    if test "$TERM_PROGRAM" = vscode
+        return
+    end
+
     # 刚好 4 个选项，摇 1 到 4 的随机数
     set -l lucky_number (random 1 4)
 
