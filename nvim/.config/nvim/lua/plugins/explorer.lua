@@ -52,8 +52,8 @@ return {
       windows = {
         -- 开启文件预览窗口（极大提升浏览体验）
         preview = true,
-        width_focus = 30,
-        width_preview = 50,
+        width_focus = 25,
+        width_preview = 55,
       },
       mappings = {
         -- 可以在这里自定义 mini.files 内部的局部快捷键
