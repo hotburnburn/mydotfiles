@@ -29,4 +29,4 @@ set -x PATH $BUN_INSTALL/bin $PATH
 
 # other path
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME/nv"
-set -gx IPYTHONDIR "$XDG_CONFIG_HOME/ipython"
+set -gx IPYTHONDIR "$XDG_DATA_HOME/ipython"
