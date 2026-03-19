@@ -15,8 +15,11 @@ abbr -a ga "git add ."
 abbr -a gcm "git commit -m "
 abbr -a gst "git status"
 abbr -a gd "git diff"
-abbr -a glog "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 abbr -a glg 'git log --stat'
+# 默认的 glog，限制只看最近 10 条提交 📉
+abbr -a glog "git log -n 10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# 新增的 gloga (glog all)，查看完整的提交树 🌳
+abbr -a gloga "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # ==========================================
 # 🚀 Zoxide + FZF 终极目录瞬移魔法
