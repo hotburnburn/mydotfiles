@@ -6,3 +6,5 @@ if status is-interactive
         exec zellij
     end
 end
+
+set -gx EDITOR nvim
