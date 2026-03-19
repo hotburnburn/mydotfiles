@@ -5,4 +5,4 @@ curl -fsSL https://bun.sh/install | BUN_INSTALL="$HOME/.local/share/bun" bash
 --------------------
 
 2026-03-19 11:49 acer:
-[ ] install yazi on work, 其他玩具？lazygit dust xh jq
+[ ] pmimport on work
