@@ -38,15 +38,18 @@ zellij
 zoxide
 
 # aur包
+bastet
 cbonsai
+nsnake
+typespeed
 win32yank-bin
 xdg-ninja
 yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-19 12:44:46
+# 更新时间: 2026-03-20 00:59:09
 # 设备名称: yanwo
 # 官方包数: 37
-# AUR包数 : 5
-# 总包数量: 42
+# AUR包数 : 8
+# 总包数量: 45
