@@ -24,6 +24,7 @@ neovim
 openssh
 procs
 ripgrep
+sl
 starship
 stow
 sudo
@@ -48,8 +49,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-20 00:59:09
+# 更新时间: 2026-03-21 11:32:30
 # 设备名称: yanwo
-# 官方包数: 37
+# 官方包数: 38
 # AUR包数 : 8
-# 总包数量: 45
+# 总包数量: 46
