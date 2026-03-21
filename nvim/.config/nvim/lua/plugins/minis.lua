@@ -19,4 +19,25 @@ return {
       },
     },
   },
+  {
+    {
+      "nvim-mini/mini.ai",
+      event = "VeryLazy",
+      opts = function()
+        local ai = require("mini.ai")
+        return {
+          custom_textobjects = {
+            -- f: 完整的函数定义/函数体 (Function Definition)
+            f = ai.gen_spec.treesitter({ a = "@function.outer", i = "@function.inner" }, {}),
+
+            -- c: 完整的类定义 (Class Definition)
+            c = ai.gen_spec.treesitter({ a = "@class.outer", i = "@class.inner" }, {}),
+
+            -- F: 函数调用 (Function Call)，例如 requests.get(url)
+            F = ai.gen_spec.treesitter({ a = "@call.outer", i = "@call.inner" }, {}),
+          },
+        }
+      end,
+    },
+  },
 }
