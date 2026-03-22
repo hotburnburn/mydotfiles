@@ -15,6 +15,8 @@ function pmimport --description "Import, sync and prune packages from dotfiles"
         return 0
     end
 
+    sudo pacman -Syu
+
     # 2. 安装包
     echo "[1/2] 🚀 准备同步 "(count $pkglist)" 个包..."
     yay -S --needed $pkglist
