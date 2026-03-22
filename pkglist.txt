@@ -5,6 +5,7 @@ bat
 bottom
 cowsay
 dust
+erlang
 eza
 fastfetch
 fd
@@ -15,14 +16,17 @@ fortune-mod
 fzf
 git
 git-delta
+gleam
 glow
 jq
 less
 lolcat
 nano
 neovim
+nyancat
 openssh
 procs
+rebar3
 ripgrep
 sl
 starship
@@ -49,8 +53,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-21 11:32:30
-# 设备名称: yanwo
-# 官方包数: 38
+# 更新时间: 2026-03-22 21:52:03
+# 设备名称: hot2burn
+# 官方包数: 42
 # AUR包数 : 8
-# 总包数量: 46
+# 总包数量: 50
