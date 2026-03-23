@@ -45,6 +45,7 @@ zoxide
 # aur包
 bastet
 cbonsai
+exercism
 nsnake
 typespeed
 win32yank-bin
@@ -53,8 +54,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-22 23:48:33
-# 设备名称: yanwo
+# 更新时间: 2026-03-23 15:58:08
+# 设备名称: hot2burn
 # 官方包数: 42
-# AUR包数 : 8
-# 总包数量: 50
+# AUR包数 : 9
+# 总包数量: 51
