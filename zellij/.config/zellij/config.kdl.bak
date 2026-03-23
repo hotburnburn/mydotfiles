@@ -1,0 +1,20 @@
+// ================= 全局设置 =================
+// 使用我们创建的无 UI 布局
+default_layout "naked"
+pane_frames false
+
+// 历史记录行数 (按需调整)
+scroll_buffer_size 10000
+
+scrollback_editor "nvim"
+
+// ================= 快捷键设置 =================
+// clear-defaults=true 极其重要！它禁用了 Zellij 所有默认快捷键 (Ctrl+p/t/n/q 等)
+// 保证了 Zellij 绝对不会和你的 Fish、fzf、Neovim 产生任何冲突
+keybinds clear-defaults=true {
+    // 我们只在 normal 模式下定义唯一需要的功能
+    normal {
+        // 绑定 Alt+h (或你喜欢的其他键) 一键将历史记录发送给 Neovim
+        bind "Alt o" { EditScrollback; }
+    }
+}

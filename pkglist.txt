@@ -1,0 +1,61 @@
+# 官方包
+base
+base-devel
+bat
+bottom
+cowsay
+dust
+erlang
+eza
+fastfetch
+fd
+figlet
+fish
+fnm
+fortune-mod
+fzf
+git
+git-delta
+gleam
+glow
+jq
+less
+lolcat
+nano
+neovim
+nyancat
+openssh
+procs
+rebar3
+ripgrep
+sl
+starship
+stow
+sudo
+tealdeer
+thefuck
+unzip
+uv
+wget
+xh
+yazi
+zellij
+zoxide
+
+# aur包
+bastet
+cbonsai
+exercism
+nsnake
+typespeed
+win32yank-bin
+xdg-ninja
+yay-bin
+yay-bin-debug
+
+# === 元数据与统计信息 ===
+# 更新时间: 2026-03-23 15:58:08
+# 设备名称: hot2burn
+# 官方包数: 42
+# AUR包数 : 9
+# 总包数量: 51

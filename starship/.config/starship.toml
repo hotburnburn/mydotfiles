@@ -1,0 +1,80 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+format = """
+$jobs\
+$directory\
+$git_branch$git_status\
+${custom.proxy}\
+$lua$nodejs${custom.uv_python}$rust\
+$package\
+$cmd_duration\
+${custom.space}$fill${custom.space}\
+${custom.weather}$time\
+$line_break\
+$status$character\
+"""
+
+# 候选： Bun C/Cpp Deno direnv docker env_var haskell hostname java k8s local_ip mem_usage mise mojo ocaml pixi purescript quarto ruby shlvl vcsh typst
+
+[directory]
+truncation_length = 0
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[custom.proxy]
+when = "test -n \"$http_proxy\""
+format = "[🌐 ](bold)"
+ignore_timeout = true
+
+[custom.uv_python]
+detect_files = [".python_version", "uv.lock", "pyproject.toml"]
+detect_folders = [".venv"]
+detect_extensions = [".py", ".ipynb"]
+command = "uv python find --show-version"
+format = "via [$symbol$output]($style) "
+symbol = "🐍 "
+style = "bold yellow"
+ignore_timeout = true
+
+[package]
+format = "[$symbol$version]($style) "
+
+[cmd_duration]
+format = "[$duration ](dimmed white)"
+
+[custom.space]
+when = true
+format = " "
+
+[fill]
+symbol = "-"
+style = "#333333"
+
+[custom.oldpwd]
+# 读取并只显示上一级目录的最后一部分名称
+command = 'if [ "$OLDPWD" = "$HOME" ]; echo "~"; else basename "$OLDPWD"; end'
+# 只有当 $OLDPWD 不为空时才触发（避免刚打开终端时报错）
+when = '[ -n "$OLDPWD" ]'
+# 定义显示的格式，↩ 图标加上目录名
+format = '[↩ $output]($style) '
+# 设置为暗灰色，像幽灵字一样，提供信息但不喧宾夺主
+style = "#4F4F4F"
+
+[custom.weather]
+command = "cat /tmp/weather_cache.txt"
+when = "test -s /tmp/weather_cache.txt"
+style = "bold yellow"
+format = " [$output]($style) "
+ignore_timeout = true
+
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = '%R'         # %R 是 24 小时制 (HH:MM)
+style = '#ADFF2F'
+
+[status]
+disabled = false
+format = '[\[$status\]]($style)'
