@@ -1,3 +1,6 @@
+2026-03-24 02:04 acer:
+[ ] add a local .fish to load lat&lon var
+
 2026-03-19 11:49 acer:
 [👌] pmimport on work (and stow yazi)[on work]
 
