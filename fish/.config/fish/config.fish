@@ -1,7 +1,5 @@
 set -gx EDITOR nvim
 
-starship init fish | source
-
 if status is-interactive
     if not set -q ZELLIJ
         # 排除 VS Code 集成终端
