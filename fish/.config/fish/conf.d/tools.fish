@@ -8,6 +8,7 @@ zoxide init fish --cmd cd | source
 alias z="zi"
 abbr -a gb "cd -"
 
+set -gx EDITOR nvim
 abbr -a v nvim
 
 abbr -a ga "git add ."
