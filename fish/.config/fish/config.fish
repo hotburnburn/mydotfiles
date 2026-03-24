@@ -1,10 +1,19 @@
-# 检查当前是否已经处于 Zellij 环境中 (防止无限套娃死循环)
+set -gx EDITOR nvim
+
+starship init fish | source
+
 if status is-interactive
     if not set -q ZELLIJ
-        # 如果当前不是在 VS Code 的集成终端里
+        # 排除 VS Code 集成终端
         and test "$TERM_PROGRAM" != vscode
+        # 排除 WezTerm（这样你可以在 WezTerm 里测试它的原生功能）
+        and test "$TERM_PROGRAM" != WezTerm
+        # 如果是 Windows Terminal 或其他终端，继续拉起 zellij
         exec zellij
     end
 end
 
-set -gx EDITOR nvim
+# if status is-interactive
+#     string match -q "$TERM_PROGRAM" vscode
+#     and . (code --locate-shell-integration-path fish)
+# end
