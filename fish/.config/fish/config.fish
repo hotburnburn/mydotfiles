@@ -10,8 +10,3 @@ if status is-interactive
         exec zellij
     end
 end
-
-# if status is-interactive
-#     string match -q "$TERM_PROGRAM" vscode
-#     and . (code --locate-shell-integration-path fish)
-# end
