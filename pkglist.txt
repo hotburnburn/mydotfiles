@@ -33,7 +33,6 @@ starship
 stow
 sudo
 tealdeer
-thefuck
 unzip
 uv
 wget
@@ -44,7 +43,6 @@ zip
 zoxide
 
 # aur包
-bastet
 cbonsai
 exercism
 nsnake
@@ -55,8 +53,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-25 15:22:25
+# 更新时间: 2026-03-25 16:31:15
 # 设备名称: yanwo
-# 官方包数: 43
-# AUR包数 : 9
-# 总包数量: 52
+# 官方包数: 42
+# AUR包数 : 8
+# 总包数量: 50

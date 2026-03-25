@@ -36,7 +36,7 @@ function fish_greeting
             # 4. 炫彩艺术短句 (每次不同的话)
             if command -v fortune >/dev/null; and command -v figlet >/dev/null; and command -v lolcat >/dev/null
                 # 使用 -s 参数确保只抽取短句，防止 figlet 排版炸裂
-                fortune -s | figlet | lolcat
+                fortune -s | figlet -t -c -f small | lolcat
             else if command -v figlet >/dev/null; and command -v lolcat >/dev/null
                 # 如果没装 fortune，就固定显示一句问候
                 echo "Hello Fish!" | figlet | lolcat
