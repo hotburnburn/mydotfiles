@@ -1,16 +1,10 @@
 # sync
 
-## acer -> work
+- [👌] @work 2026-03-26 19:38 rename secrets.fish to local_env.fish
 
-- [👌] 2026-03-19 00:44 install bun on work
-curl -fsSL <https://bun.sh/install> | BUN_INSTALL="$HOME/.local/share/bun" bash
+- [👌] @acer 2026-03-24 02:04 add a local .fish to load lat&lon var
 
-- [👌] 2026-03-19 11:49 pmimport on work [and stow yazi](on work)
+- [👌] @acer 2026-03-19 11:49 pmimport on work [and stow yazi](on work)
 
-- [👌] 2026-03-24 02:04 add a local .fish to load lat&lon var
-
-i'm anchor****
-
-## work -> acer
-
-- [ ] 2026-03-26 19:38 rename secrets.fish to local_env.fish
+- [👌] @acer 2026-03-19 00:44 install bun on work
+  curl -fsSL <https://bun.sh/install> | BUN_INSTALL="$HOME/.local/share/bun" bash
