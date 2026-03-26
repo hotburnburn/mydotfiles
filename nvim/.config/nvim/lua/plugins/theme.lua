@@ -8,6 +8,8 @@ return {
       flavour = "mocha", -- 推荐 mocha 模式，最经典的深色猫猫派
       -- 这里还可以加很多针对其他插件的透明度、高亮微调
 
+      transparent_background = true, -- 开启透明背景 ✨
+
       custom_highlights = function(colors)
         -- 我们自定义一个暗紫色作为聚焦背景，比纯 base 亮一点，带有 Mocha mauve 的色调
         local focus_bg = "#2c2638"
