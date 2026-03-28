@@ -1,2 +1,3 @@
 fish/.config/fish/conf.d/01_local_env.fish
 dotfiles_backup.zip
+ghc/.config/ghc/ghci_history

@@ -14,10 +14,12 @@ fish
 fnm
 fortune-mod
 fzf
+ghc
 git
 git-delta
 gleam
 glow
+haskell-language-server
 jq
 less
 lolcat
@@ -53,8 +55,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-27 21:21:50
+# 更新时间: 2026-03-28 22:40:00
 # 设备名称: yanwo
-# 官方包数: 42
+# 官方包数: 44
 # AUR包数 : 8
-# 总包数量: 50
+# 总包数量: 52
