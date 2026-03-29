@@ -5,7 +5,6 @@ bat
 bottom
 cowsay
 dust
-erlang
 eza
 fastfetch
 fd
@@ -17,18 +16,15 @@ fzf
 ghc
 git
 git-delta
-gleam
 glow
 haskell-language-server
 jq
 less
 lolcat
-nano
 neovim
 nyancat
 openssh
 procs
-rebar3
 ripgrep
 sl
 starship
@@ -47,16 +43,13 @@ zoxide
 # aur包
 cbonsai
 exercism
-nsnake
-typespeed
 win32yank-bin
-xdg-ninja
 yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-03-28 22:40:00
-# 设备名称: yanwo
-# 官方包数: 44
-# AUR包数 : 8
-# 总包数量: 52
+# 更新时间: 2026-03-29 15:13:16
+# 设备名称: hot2burn
+# 官方包数: 40
+# AUR包数 : 5
+# 总包数量: 45

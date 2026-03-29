@@ -1,6 +1,6 @@
 # sync
 
-- [ ] @acer 2026-03-28 22:42 stow ghc
+- [👌] @acer 2026-03-28 22:42 stow ghc
 
 - [👌] @work 2026-03-26 19:38 rename secrets.fish to local_env.fish
 
