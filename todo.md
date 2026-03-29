@@ -1,6 +1,8 @@
 # sync
 
-- [ ] @work 2026-03-29 15:35 stow yay
+- [ ] @work 2026-03-29 22:56 clean minimal haskell & install ghcup & stow ghcup stack cabal
+
+- [👌] @work 2026-03-29 15:35 stow yay
 
 - [👌] @acer 2026-03-28 22:42 stow ghc
 

@@ -26,6 +26,10 @@ if not set -q FNM_MULTISHELL_PATH
 end
 set -gx NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME/npm/npmrc"
 
+# haskell
+set -gx GHCUP_USE_XDG_DIRS 1
+set -gx STACK_XDG 1
+
 # other path
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME/nv"
 set -gx IPYTHONDIR "$XDG_DATA_HOME/ipython"
