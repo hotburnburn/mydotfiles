@@ -1,6 +1,9 @@
 abbr -a ins "yay -S --needed"
 abbr -a pmclean "sudo pacman -Rns \$(pacman -Qtdq)"
 
+# 强制 GUI 程序走 X11/XWayland 通道，解决 Open3D/Wayland 冲突
+set -gx WAYLAND_DISPLAY ""
+
 starship init fish | source
 
 zoxide init fish | source

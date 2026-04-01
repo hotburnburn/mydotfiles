@@ -19,6 +19,11 @@ glow
 jdk-openjdk
 jq
 less
+libglvnd
+libxcursor
+libxinerama
+libxkbcommon
+libxrandr
 lolcat
 neovim
 nyancat
@@ -34,6 +39,7 @@ unzip
 uv
 wget
 xh
+xorg-xeyes
 yazi
 zellij
 zip
@@ -47,8 +53,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-04-01 13:12:50
-# 设备名称: yanwo
-# 官方包数: 39
+# 更新时间: 2026-04-01 15:31:21
+# 设备名称: hot2burn
+# 官方包数: 45
 # AUR包数 : 5
-# 总包数量: 44
+# 总包数量: 50
