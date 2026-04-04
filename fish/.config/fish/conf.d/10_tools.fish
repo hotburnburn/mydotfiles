@@ -29,6 +29,8 @@ abbr -a glog "git log -n 10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%
 # 新增的 gloga (glog all)，查看完整的提交树 🌳
 abbr -a gloga "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+abbr -a esub "exercism submit"
+
 # ==========================================
 # 🚀 Zoxide + FZF 终极目录瞬移魔法
 # ==========================================

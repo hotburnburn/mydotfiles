@@ -33,3 +33,4 @@ set -gx STACK_XDG 1
 # other path
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME/nv"
 set -gx IPYTHONDIR "$XDG_DATA_HOME/ipython"
+set -gx OPEN3D_DATA_ROOT "$XDG_CACHE_HOME/open3d_data"

@@ -47,6 +47,10 @@ function exercism --description "Wrapper for exercism with auto-setup and VSCode
                 end
             end
 
+            if test "$track"=typescript
+                corepack yarn install
+            end
+
             # 6. 智能打开 VSCode
             if set -q TERM_PROGRAM; and test "$TERM_PROGRAM" = vscode
                 echo "💻 在集成终端中，复用当前窗口..."
