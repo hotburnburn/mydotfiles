@@ -47,8 +47,47 @@ function exercism --description "Wrapper for exercism with auto-setup and VSCode
                 end
             end
 
-            if test "$track"=typescript
+            if test "$track" = typescript
                 corepack yarn install
+            end
+
+            # ✨ 新增：Python 环境初始化逻辑
+            if test "$track" = python
+                echo "🐍 检测到 Python 环境，正在使用 uv 初始化..."
+
+                # 1. 创建虚拟环境 (如果不存在)
+                if not test -d .venv
+                    uv venv
+                end
+
+                # 2. 强制指定安装到当前目录的 .venv 中
+                echo "📦 正在极速安装测试依赖..."
+                if uv pip install --python .venv pytest pytest-cache pytest-subtests
+                    echo "✅ 依赖安装成功！"
+                else
+                    echo "❌ 依赖安装失败，请检查网络！"
+                end
+
+                # 3. 创建 pytest.ini 消除自定义 marker 警告
+                if not test -f pytest.ini
+                    echo "⚙️ 自动生成 pytest.ini 配置文件..."
+                    printf "[pytest]\nmarkers =\n    task: A concept exercise task.\n" >pytest.ini
+                end
+
+                # 4. 🤖 自动配置 VSCode 测试 (免除手动点击)
+                echo "🪄 注入 VSCode 测试配置..."
+                if not test -d .vscode
+                    mkdir .vscode
+                end
+                # 直接将配置写入 settings.json
+                echo '{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}' >.vscode/settings.json
+
             end
 
             # 6. 智能打开 VSCode
