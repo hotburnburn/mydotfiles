@@ -25,6 +25,8 @@ libxinerama
 libxkbcommon
 libxrandr
 lolcat
+man-db
+man-pages
 neovim
 nyancat
 openssh
@@ -53,8 +55,8 @@ yay-bin
 yay-bin-debug
 
 # === 元数据与统计信息 ===
-# 更新时间: 2026-04-01 15:31:21
+# 更新时间: 2026-04-13 05:14:32
 # 设备名称: hot2burn
-# 官方包数: 45
+# 官方包数: 47
 # AUR包数 : 5
-# 总包数量: 50
+# 总包数量: 52
