@@ -20,7 +20,7 @@ abbr -a rg. "rg -."
 abbr -a rgi. "rg -i -."
 
 abbr -a ga "git add ."
-abbr -a gcm "git commit -m "
+abbr -a gcm --set-cursor 'git commit -m "%"'
 abbr -a gst "git status"
 abbr -a gd "git diff"
 abbr -a glg 'git log --stat'
