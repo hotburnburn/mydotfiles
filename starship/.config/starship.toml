@@ -6,7 +6,7 @@ $jobs\
 $directory\
 $git_branch$git_status\
 ${custom.proxy}\
-$lua$nodejs${custom.uv_python}$rust\
+$lua$nodejs$bun${custom.uv_python}$rust\
 $package\
 $cmd_duration\
 ${custom.space}$fill${custom.space}\
