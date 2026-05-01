@@ -16,6 +16,9 @@
     
     # 显示行号
     line-numbers = true
+
+    # 禁用长代码自动换行
+    wrap-max-lines = 0
     
     # 开启文件级别的导航修饰 (让文件之间的分割线更明显)
     navigate = true    
