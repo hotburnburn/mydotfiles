@@ -34,3 +34,14 @@ set -gx STACK_XDG 1
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME/nv"
 set -gx IPYTHONDIR "$XDG_DATA_HOME/ipython"
 set -gx OPEN3D_DATA_ROOT "$XDG_CACHE_HOME/open3d_data"
+
+# claude code
+set -gx CLAUDE_CONFIG_DIR "$HOME/.local/share/claude"
+
+set -gx ANTHROPIC_BASE_URL "https://api.deepseek.com/anthropic"
+set -gx ANTHROPIC_MODEL "deepseek-v4-pro[1m]"
+set -gx ANTHROPIC_DEFAULT_OPUS_MODEL "deepseek-v4-pro[1m]"
+set -gx ANTHROPIC_DEFAULT_SONNET_MODEL "deepseek-v4-pro[1m]"
+set -gx ANTHROPIC_DEFAULT_HAIKU_MODEL deepseek-v4-flash
+set -gx CLAUDE_CODE_SUBAGENT_MODEL deepseek-v4-flash
+set -gx CLAUDE_CODE_EFFORT_LEVEL max
