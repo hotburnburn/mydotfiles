@@ -5,6 +5,20 @@
 keybinds clear-defaults=true {
     normal {
         bind "Alt o" { EditScrollback; }
+        // 新增：按 Alt s 进入滚动模式
+        bind "Alt i" { SwitchToMode "Scroll"; } 
+    }
+    
+    // 新增：专门配置在 Scroll 模式下的按键
+    scroll {
+        bind "Alt o" { EditScrollback; SwitchToMode "Normal"; }
+        bind "Alt i" "q" "Esc" "Enter" { SwitchToMode "Normal"; } // 退出滚动
+        bind "j" "Down" { ScrollDown; }            // 向下滚动一行
+        bind "k" "Up" { ScrollUp; }                // 向上滚动一行
+        bind "Ctrl d" "PageDown" "Right" "l" { PageScrollDown; } // 向下翻页
+        bind "Ctrl u" "PageUp" "Left" "h" { PageScrollUp; }      // 向上翻页
+        bind "g" { ScrollToTop; }                  // 快速回到顶部
+        bind "G" { ScrollToBottom; }               // 快速到底部
     }
 }
 
